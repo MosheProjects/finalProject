@@ -2,7 +2,7 @@ import React from 'react'
 import ContentLoader from 'react-content-loader'
 
 const ThreeDots = props => (
-    <div className="full-page d-flex justify-content-center align-items-center">
+    <div className="full-page bg-peach d-flex justify-content-center align-items-center">
         <ContentLoader
             viewBox="0 0 400 160"
             height={160}

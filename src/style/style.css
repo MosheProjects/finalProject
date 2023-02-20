@@ -34,9 +34,17 @@
       position: sticky !important;
     }
   }
+
+  .pointer {
+    cursor: pointer;
+  }
   
   .bg-light-indigo  {
     background-color:#c5b3e6;
+  }
+
+  .bg-peach {
+    background-color: #e6b3b4;
   }
 
   .bg-dark-blue :hover :active  :checked  :focus :enabled {
@@ -63,6 +71,10 @@
     color :white !important;
   }
 
+  .nav-tabs .nav-link.active {
+    background-color: unset !important;
+  }
+
   .text-nothing {
     color:white;
   }
@@ -72,7 +84,7 @@
   
   @media (min-width: 992px) {
     .full-lg-page {
-      height:85vh;
+      height:70vh;
     }
     .flex-lg-row {
       flex-direction: row;

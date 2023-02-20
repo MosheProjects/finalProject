@@ -13,7 +13,8 @@ export function DataProvider({ children }) {
     })
   }, [])
   
-  return <DataContext.Provider value={dataState}>{children}</DataContext.Provider>;
+  let value = {dataState}
+  return <DataContext.Provider value={value}>{children}</DataContext.Provider>;
 }
 
 export function useData() {

@@ -1,4 +1,69 @@
-{
+{"vaccines":[
+    {
+        "name":"חודש",
+        "month":1,
+        "vaccines":[
+            {"name":"דלקת כבד B","offName":"HBV", "discription":"תרכיב נגד דלקת כבד B", "picture":"https://us.123rf.com/450wm/liudmilachernetska/liudmilachernetska2212/liudmilachernetska221205543/195496598-woman-with-yellow-eyes-closeup-symptom-of-hepatitis.jpg?ver=6", "ref":"https://vaccines.sanofi.co.il/disease-index/hepatitis-b"}
+    ]},
+    {
+        "name":"חודשיים",
+        "month":2,
+        "vaccines":[
+            {"name":"שיתוק ילדים","offName":"IPV","discription":"תרכיב מומת נגד שיתוק ילדים", "picture":"https://thehill.com/wp-content/uploads/sites/2/2022/07/GettyImages-1296442119.jpg?w=1280", "ref":"https://vaccines.sanofi.co.il/disease-index/polio"},
+            {"name":"פלצת-אסכרה-שעלת","offName":"DTaP","discription":" תרכיב נגד אסכרה-פלצת-שעלת ", "picture":"https://vaccines.sanofi.co.il/-/media/ems/conditions/disease-index-images/5640761_s.jpg", "ref":"https://www.chisunim.co.il/the-israeli-society-for-pediatric-infectious-diseases/routine-vaccines/hib-dtap-p/"},
+            {"name":"דלקת קרום המוח","offName":"Hib","discription":"תרכיב נגד המופילוס אינפלואנצה b", "picture":"https://www.clalit.co.il/he/new_article_images/your_health/babies%20and%20kids/shutterstock_401846923/medium.jpg", "ref":"https://www.midaat.org.il/vaccine/hib/"},
+            {"name":"דלקת ריאות","offName":"PCV13","discription":"תרכיב מצומד נגד זיהומים פנוימוקוקיים", "picture":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7mfA6_s_j4poMu-RrasvfsCaqumfOTp-yhA&usqp=CAU", "ref":"https://www.midaat.org.il/vaccine/streptococcus-pneumonia/"},
+            {"name":"רוטה","offName":"Rota","discription":"תרכיב נגד זיהום הנגרם ע''י נגיף רוטה", "picture":"https://www.vitaplus.co.il/wp-content/uploads/2021/03/%D7%99%D7%9C%D7%93-%D7%9E%D7%97%D7%96%D7%99%D7%A7-%D7%92%D7%9C%D7%99%D7%9C-%D7%A0%D7%99%D7%99%D7%A8-%D7%98%D7%95%D7%90%D7%9C%D7%98-%D7%95%D7%94%D7%95%D7%9C%D7%9A-%D7%9C%D7%A9%D7%99%D7%A8%D7%95%D7%AA%D7%99%D7%9D-1024x682.jpg", "ref":"https://vaccines.sanofi.co.il/disease-index/rotavirus"}
+    ]},
+    {
+        "name":"4 חודשים",
+        "month":4,
+        "vaccines":[
+            {"name":"שיתוק ילדים","offName":"IPV","discription":"תרכיב מומת נגד שיתוק ילדים", "picture":"https://thehill.com/wp-content/uploads/sites/2/2022/07/GettyImages-1296442119.jpg?w=1280", "ref":"https://vaccines.sanofi.co.il/disease-index/polio"},
+            {"name":"פלצת-אסכרה-שעלת","offName":"DTaP","discription":" תרכיב נגד אסכרה-פלצת-שעלת ", "picture":"https://vaccines.sanofi.co.il/-/media/ems/conditions/disease-index-images/5640761_s.jpg", "ref":"https://www.chisunim.co.il/the-israeli-society-for-pediatric-infectious-diseases/routine-vaccines/hib-dtap-p/"},
+            {"name":"דלקת קרום המוח","offName":"Hib","discription":"תרכיב נגד המופילוס אינפלואנצה b", "picture":"https://www.clalit.co.il/he/new_article_images/your_health/babies%20and%20kids/shutterstock_401846923/medium.jpg", "ref":"https://www.midaat.org.il/vaccine/hib/"},
+            {"name":"דלקת ריאות","offName":"PCV13","discription":"תרכיב מצומד נגד זיהומים פנוימוקוקיים", "picture":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7mfA6_s_j4poMu-RrasvfsCaqumfOTp-yhA&usqp=CAU", "ref":"https://www.midaat.org.il/vaccine/streptococcus-pneumonia/"},
+            {"name":"רוטה","offName":"Rota","discription":"תרכיב נגד זיהום הנגרם ע''י נגיף רוטה", "picture":"https://www.vitaplus.co.il/wp-content/uploads/2021/03/%D7%99%D7%9C%D7%93-%D7%9E%D7%97%D7%96%D7%99%D7%A7-%D7%92%D7%9C%D7%99%D7%9C-%D7%A0%D7%99%D7%99%D7%A8-%D7%98%D7%95%D7%90%D7%9C%D7%98-%D7%95%D7%94%D7%95%D7%9C%D7%9A-%D7%9C%D7%A9%D7%99%D7%A8%D7%95%D7%AA%D7%99%D7%9D-1024x682.jpg", "ref":"https://vaccines.sanofi.co.il/disease-index/rotavirus"}
+    ]},
+    {
+        "name":"6 חודשים",
+        "month":6,
+        "vaccines":[
+            {"name":"דלקת כבד B","offName":"HBV", "discription":"תרכיב נגד דלקת כבד B", "picture":"https://us.123rf.com/450wm/liudmilachernetska/liudmilachernetska2212/liudmilachernetska221205543/195496598-woman-with-yellow-eyes-closeup-symptom-of-hepatitis.jpg?ver=6", "ref":"https://vaccines.sanofi.co.il/disease-index/hepatitis-b"},
+            {"name":"שיתוק ילדים","offName":"IPV","discription":"תרכיב מומת נגד שיתוק ילדים", "picture":"https://thehill.com/wp-content/uploads/sites/2/2022/07/GettyImages-1296442119.jpg?w=1280", "ref":"https://vaccines.sanofi.co.il/disease-index/polio"},
+            {"name":"שיתוק ילדים","offName":"bOPV","discription":" תרכיב ביוולנטי חי-מוחלש נגד שיתוק ילדים", "picture":"https://thehill.com/wp-content/uploads/sites/2/2022/07/GettyImages-1296442119.jpg?w=1280", "ref":"https://vaccines.sanofi.co.il/disease-index/polio"},
+            {"name":"פלצת-אסכרה-שעלת","offName":"DTaP","discription":" תרכיב נגד אסכרה-פלצת-שעלת ", "picture":"https://vaccines.sanofi.co.il/-/media/ems/conditions/disease-index-images/5640761_s.jpg", "ref":"https://www.chisunim.co.il/the-israeli-society-for-pediatric-infectious-diseases/routine-vaccines/hib-dtap-p/"},
+            {"name":"דלקת קרום המוח","offName":"Hib","discription":"תרכיב נגד המופילוס אינפלואנצה b", "picture":"https://www.clalit.co.il/he/new_article_images/your_health/babies%20and%20kids/shutterstock_401846923/medium.jpg", "ref":"https://www.midaat.org.il/vaccine/hib/"},
+            {"name":"רוטה","offName":"Rota","discription":"תרכיב נגד זיהום הנגרם ע''י נגיף רוטה", "picture":"https://www.vitaplus.co.il/wp-content/uploads/2021/03/%D7%99%D7%9C%D7%93-%D7%9E%D7%97%D7%96%D7%99%D7%A7-%D7%92%D7%9C%D7%99%D7%9C-%D7%A0%D7%99%D7%99%D7%A8-%D7%98%D7%95%D7%90%D7%9C%D7%98-%D7%95%D7%94%D7%95%D7%9C%D7%9A-%D7%9C%D7%A9%D7%99%D7%A8%D7%95%D7%AA%D7%99%D7%9D-1024x682.jpg", "ref":"https://vaccines.sanofi.co.il/disease-index/rotavirus"}
+    ]},
+    {
+        "name":"12 חודשים",
+        "month":12,
+        "vaccines":[
+            {"name":"שיתוק ילדים","offName":"IPV","discription":"תרכיב מומת נגד שיתוק ילדים", "picture":"https://thehill.com/wp-content/uploads/sites/2/2022/07/GettyImages-1296442119.jpg?w=1280", "ref":"https://vaccines.sanofi.co.il/disease-index/polio"},
+            {"name":"פלצת-אסכרה-שעלת","offName":"DTaP","discription":" תרכיב נגד אסכרה-פלצת-שעלת ", "picture":"https://vaccines.sanofi.co.il/-/media/ems/conditions/disease-index-images/5640761_s.jpg", "ref":"https://www.chisunim.co.il/the-israeli-society-for-pediatric-infectious-diseases/routine-vaccines/hib-dtap-p/"},
+            {"name":"דלקת קרום המוח","offName":"Hib","discription":"תרכיב נגד המופילוס אינפלואנצה b", "picture":"https://www.clalit.co.il/he/new_article_images/your_health/babies%20and%20kids/shutterstock_401846923/medium.jpg", "ref":"https://www.midaat.org.il/vaccine/hib/"},
+            {"name":"דלקת ריאות","offName":"PCV13","discription":"תרכיב מצומד נגד זיהומים פנוימוקוקיים", "picture":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7mfA6_s_j4poMu-RrasvfsCaqumfOTp-yhA&usqp=CAU", "ref":"https://www.midaat.org.il/vaccine/streptococcus-pneumonia/"},
+            {"name":"חצבת-חזרת-אדמת","offName":"MMR","discription":"תרכיב נגד חצבת-חזרת-אדמת", "picture":"https://www.medico.co.il/wp-content/uploads/2021/10/%D7%97%D7%A6%D7%91%D7%AA-300x200.jpg", "ref":"https://www.midaat.org.il/combination-page/mmr/"},
+            {"name":"אבעבועות רוח","offName":"Var","discription":"תרכיב נגד אבעבועות רוח", "picture":"https://vaccines.sanofi.co.il/-/media/ems/conditions/disease-index-images/12534133_s.jpg", "ref":"https://vaccines.sanofi.co.il/disease-index/chicken-pox"}
+    ]},
+    {
+        "name":"18 חודשים",
+        "month":18,
+        "vaccines":[
+            {"name":"שיתוק ילדים","offName":"bOPV","discription":" תרכיב ביוולנטי חי-מוחלש נגד שיתוק ילדים", "picture":"https://thehill.com/wp-content/uploads/sites/2/2022/07/GettyImages-1296442119.jpg?w=1280", "ref":"https://vaccines.sanofi.co.il/disease-index/polio"},
+            {"name":"דלקת כבד A","offName":"HAV","discription":"תרכיב נגד דלקת כבד A", "picture":"https://us.123rf.com/450wm/liudmilachernetska/liudmilachernetska2212/liudmilachernetska221205543/195496598-woman-with-yellow-eyes-closeup-symptom-of-hepatitis.jpg?ver=6", "ref":"https://vaccines.sanofi.co.il/disease-index/hepatitis-a"}
+    ]},
+    {
+        "name":"24 חודשים",
+        "month":24,
+        "vaccines":[
+            {"name":"שיתוק ילדים","offName":"bOPV","discription":" תרכיב ביוולנטי חי-מוחלש נגד שיתוק ילדים", "picture":"https://thehill.com/wp-content/uploads/sites/2/2022/07/GettyImages-1296442119.jpg?w=1280", "ref":"https://vaccines.sanofi.co.il/disease-index/polio"}
+    ]}
+
+        ]
+    ,
+    "development":{
     "sixWeeksToThree": {
         "nameInHeb": "גיל 6 שבועות עד 3 חודשים",
         "recomendedTime": "בגיל חודשיים",
@@ -517,7 +582,8 @@
             "פעוט מטפס ומתנסה במרחב ובמתקנים בביטחון וביעילות, משטחים שונים כמו מדרגות. נהנה ממגע במגוון חומרים, כולל אוכל במרקמים שונים, צבעי אצבעות, חול, דשא.",
             "מתקדם בעצמאות: עוזר בהלבשה, מוריד גרביים. הפעוט מראה הנאה ועניין במשחק )כמו: בקוביות, משחקי הרכבה לגיל- לגו גדול, סברס, מגנטים, דפדוף בספר(, מתחיל משחק סימבולי. מרחיב את אוצר המילים, לקראת גיל שנתיים מתחיל צירופים של שתי מילים. הדרכה כללית לעידוד עליה וירידה במדרגות עם ההורה, משחק בגן משחקים, הליכה ברגל, אכילה עצמאית. "            
         ],
-        "milestones": [{
+        "milestones": [
+            {
                 "id": "mkoi89076y61",
                 "name": "מכיר לפחות חלק גוף אחד",
                 "evaluation": {
@@ -658,7 +724,8 @@
             "בגיל זה מתווספת הערכה להתפתחות שפה בהבנה ובהבעה. ניתן לבצע ההערכה לדוברי שפות שונות ולא רק לפעוטות דוברי עברית או ערבית כבעבר. האחות תוכל לבצע את ההערכה באמצעות האם או המבוגר המלווה, אם אינה דוברת בשפת הילד. הערכת השפה היא הזדמנות נוספת לאמוד גם את יכולות 31 התקשורת המילולית והלא מילולית, המשחק, והתנהגות הפעוט עם הורה ומבוגר. בתצפית ובהדרכה לשים לב להתארגנות הפעוט במסגרת המפגש, כחלק מקבלת כללי התנהגות בחברה ובמסגרות שונות. שימת לב על שיתוף הפעולה בהתאם לגיל, תגובת הילד למשימות, יכולת קבלת מסרים וכללים.",
             "הערה: גיל זה חשוב לאיתור ילדים לפני כניסתם למערכת החינוך ולהפניה וקבלה לאבחון במכון להתפתחות הילד: עד גיל 3 ש' מספר הטיפולים באמצעות המכון הוא מרבי."
         ],
-        "milestones": [{
+        "milestones": [
+            {
                 "id": "yyy67676u71",
                 "name": "הדיבור מכוון למטרות תקשורת",
                 "evaluation": {
@@ -849,7 +916,8 @@
             "בגיל זה הילדים משחקים משחקי תנועה עם בני גילם ונהנים ממשחק תנועתי משותף כדוגמת תופסת, מחבואים. ושימוש באמצעים לניידות כדוגמת אופניים. מתפתחת התחלת מודעות לסכנה. בגיל זה תחום המשחק חשוב ביותר, אך אינו נבדק באופן ישיר לפי 'אבני הדרך'. זהו גיל שהילדים נמצאים במסגרות חינוך. מתפתחים כישורי משחק עם ילדים אחרים: משחק משותף ומשתף אחר במשחק. מצטרף למשחק 'כאילו', מקבל על עצמו תפקיד בתוך משחק מתוכנן ומובנה. מעדיף פעילויות או משחקים המוכרים לו ומסתקרן לקראת משחקים חדשים. מסוגל לנהל משא ומתן על תפקידיו במשחק. ",
             ""
         ],
-        "milestones": [{
+        "milestones": [
+            {
                 "id": "tnt50779eoj76n91",
                 "name": "עומד על רגל אחת",
                 "evaluation": {
@@ -1058,4 +1126,4 @@
             }
         ]
     }
-}
+}}

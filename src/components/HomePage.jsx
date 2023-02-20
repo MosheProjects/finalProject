@@ -3,8 +3,8 @@ import playingKidsPic from "../images/playing-kids.jpg"
 
 export default function HomePage() {
   return (
-
-    <div className="bg-light-indigo full-lg-page fs-4 fw-semibold" dir="rtl">
+// full-lg-page
+    <div className="bg-peach fs-4 fw-semibold" dir="rtl">
       <h1 className="p-4 text-center">התפתחות הילד</h1>
       <div className="d-flex flex-column flex-lg-row p-2 justify-content-evenly align-items-center ">
         <img src={playingKidsPic} className='col-lg-3 col-11 img-fluid rounded mb-2 m-lg-0' alt="" />

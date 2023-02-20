@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Button, Form, Alert, Container } from "react-bootstrap";
+import { Card, Button, Form, Alert, Container, InputGroup, FloatingLabel } from "react-bootstrap";
 import { useRef } from "react";
 import { useAuth } from "../Context/AuthContext";
 import { useState } from "react";
@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { useFirestore } from '../Context/FireStoreContext'
 import { useCurrenUserInfo } from "../Context/CurrenUserInfoContext";
 import { useNavigate } from "react-router-dom";
+import { BsFillEyeFill, BsFillEyeSlashFill } from 'react-icons/bs'
 
 export default function Login() {
   const emailRef = useRef();
@@ -14,10 +15,11 @@ export default function Login() {
   const { login } = useAuth();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [seePassword, setSeePassword] = useState(false);
   const navigate = useNavigate();
   const { getDataFS } = useFirestore();
   const { setCurrenUserInfoState } = useCurrenUserInfo();
-  
+
   async function handleSubmit(e) {
     e.preventDefault();
 
@@ -25,13 +27,18 @@ export default function Login() {
     setLoading(true);
     await login(emailRef.current.value, passwordRef.current.value)
       .then((person) => { return getDataFS(person.user.uid) })
-      .then((userData) => { setCurrenUserInfoState(userData);  })
+      .then((userData) => { setCurrenUserInfoState(userData); })
       .then(() => navigate('../../user/main'))
       .catch((error) => {
         console.error(error);
         setLoading(false);
         setError("שגיאת התחברות נסה שנית!");
       })
+  }
+
+  function HandleSeePassword(e) {
+    e.preventDefault();
+    setSeePassword(!seePassword);
   }
 
   return (
@@ -44,13 +51,20 @@ export default function Login() {
               {error && <Alert variant="danger">{error}</Alert>}
               <Form onSubmit={handleSubmit}>
                 <Form.Group id="email">
-                  <Form.Label>אימייל</Form.Label>
-                  <Form.Control type="email" ref={emailRef} required />
+                  <FloatingLabel
+                    controlId="floatingInput"
+                    label="אימייל"
+                    className="mb-3"
+                  >
+                    <Form.Control type="email" ref={emailRef} required  placeholder="אימייל" />
+                  </FloatingLabel>
                 </Form.Group>
-                <Form.Group id="password">
-                  <Form.Label>סיסמא</Form.Label>
-                  <Form.Control type="password" ref={passwordRef} required />
-                </Form.Group>
+                <InputGroup className="mb-3" id="password">
+                  <FloatingLabel controlId="floatingPassword" label="סיסמא">
+                    <Form.Control type={seePassword ? "text" : "password"} className="rounded-0 rounded-end" placeholder="סיסמא" ref={passwordRef} required aria-describedby="basic-addon1" />
+                  </FloatingLabel>
+                  <InputGroup.Text id="basic-addon1" className="rounded-0 rounded-start pointer" onClick={(e) => HandleSeePassword(e)}>{seePassword ? <BsFillEyeSlashFill /> : <BsFillEyeFill />}</InputGroup.Text>
+                </InputGroup>
 
                 <Button disabled={loading} className="w-100 mt-2 " type="submit">
                   התחבר            </Button>

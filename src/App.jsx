@@ -22,7 +22,7 @@ export default function App() {
   const { currentUser } = useAuth();
 
   return (
-    <>
+    <div >
     <Header/>
     <Routes>
       <Route path='/' element={<HomePage/>}/>
@@ -35,7 +35,8 @@ export default function App() {
       <Route path="/child/:name" element={(currenUserInfoState)?(<ChildPage/>):((currentUser)?<ThreeDots/>:<ErrNotLoggedIn/>)}/>
     </Routes>
     <Footer/>
-    </>
+    </div>
   )
 }
 
+//style={{minHeight:'100vh'}}

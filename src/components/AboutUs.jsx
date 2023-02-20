@@ -3,7 +3,7 @@ import mosheProfile from "../images/moshe-profile-pic.jpeg"
 
 export default function AboutUs() {
   return (
-    <div dir="rtl" className="bg-light-indigo d-flex flex-column align-items-center justify-content-center">
+    <div dir="rtl" className="bg-peach d-flex flex-column align-items-center justify-content-center">
       <div className="container text-center mx-2 mt-2 fs-4 p-5">
         הקמנו את האתר מכיוון ששנינו הורים לילדים קטנים ושמנו לב שהרבה פעמים אנחנו שומעים על כמה שהילד לא מתפתח מספיק מכל מיני אנשים לא מוסמכים וחשבנו שיהיה נחמד אם תהיה אפשרות נגישה לקבל מידע מהימן על התפתחות ילדינו
       </div>
