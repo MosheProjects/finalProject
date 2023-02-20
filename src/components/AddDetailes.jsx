@@ -178,7 +178,7 @@ export default function AddDetailes() {
                   </Form.Group>
                   <Form.Group id="chiledsAge">
                     <Form.Label> גיל הילד</Form.Label>
-                    <Form.Control  onKeyUp={(e) => SaveChildrenNames(e, 'age', item.id)}  type="number" required />
+                    <Form.Control  onKeyUp={(e) => SaveChildrenNames(e, 'age', item.id)}  type="date" required />
                   </Form.Group>
                   <MdPersonRemove className="right curser" onClick={() => removeChield(item.id)} />
                 </div>)

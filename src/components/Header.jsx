@@ -8,10 +8,15 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useCurrenUserInfo } from "../Context/CurrenUserInfoContext";
 import { useAuth } from "../Context/AuthContext";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const{currenUserInfoState} = useCurrenUserInfo();
   const {logout} = useAuth();
+
+  useEffect(()=>{
+    
+  },[currenUserInfoState])
   
   return (
     <Navbar expand="md" dir='rtl' className="bg-dark-blue">
