@@ -15,6 +15,8 @@ import ErrNotLoggedIn from "./components/ErrNotLoggedIn";
 import ChildPage from "./components/ChildPage";
 import { useAuth } from "./Context/AuthContext";
 import ThreeDots from "./components/ThreeDots";
+import DevelopmentStep from "./components/DevelopmentStep";
+import Forum from "./components/Forum";
 
 
 export default function App() {
@@ -33,6 +35,8 @@ export default function App() {
       <Route path="/addDetailes" element={(currentUser)?<AddDetailes/>:<ErrNotLoggedIn/>}/>
       <Route path="/user/main" element={(currenUserInfoState)?(<PersonalMainPage/>):((currentUser)?<ThreeDots/>:<ErrNotLoggedIn/>)}/>
       <Route path="/child/:name" element={(currenUserInfoState)?(<ChildPage/>):((currentUser)?<ThreeDots/>:<ErrNotLoggedIn/>)}/>
+      <Route path="/user/forum" element={(currenUserInfoState)?(<Forum/>):((currentUser)?<ThreeDots/>:<ErrNotLoggedIn/>)}/>
+      <Route path="/check/:age/:test" element={(currenUserInfoState)?(<DevelopmentStep/>):((currentUser)?<ThreeDots/>:<ErrNotLoggedIn/>)}/>
     </Routes>
     <Footer/>
     </div>
