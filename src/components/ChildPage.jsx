@@ -83,17 +83,18 @@ export default function ChildPage() {
         <p className="fs-3 text-center mb-2">{curAgeFields?.nameInHeb}</p>
         {curAgeFields?.milestones.map((step, i) => {
           return (
-            <div className=" mb-2 p-1 border border-1 rounded ">
+            <div key={i} className=" mb-2 p-1 border border-1 rounded d-flex flex-column flex-md-row justify-content-between">
               <div  className="form-check form-check-reverse">
                 {(curChildInfo?.name !== name) ? <ThreeDots />
                   : curChildInfo?.milestones[curAgeFields.stepId][step.id] === "success" ?
-                    <input class="form-check-input " type="checkbox" value="" id={`question${i}`} checked onChange={(e) => { HandleCheckInput(e, step.id) }} /> :
-                    <input class="form-check-input " type="checkbox" value="" id={`question${i}`} onChange={(e) => { HandleCheckInput(e, step.id) }} />
+                    <input className="form-check-input " type="checkbox" value="" id={`question${i}`} checked onChange={(e) => { HandleCheckInput(e, step.id) }} /> :
+                    <input className="form-check-input " type="checkbox" value="" id={`question${i}`} onChange={(e) => { HandleCheckInput(e, step.id) }} />
                 }
-                <label onClick={()=>navigate(`../../check/${curAgeFields.stepId}/${step.id}`)} class="form-check-label pointer fs-4" htmlFor={`question${i}`}>
+                <label onClick={()=>navigate(`../../check/${curAgeFields.stepId}/${step.id}`)} className="form-check-label pointer fs-4" htmlFor={`question${i}`}>
                   {step.name}
                 </label>
               </div>
+              <div  onClick={()=>navigate(`../../check/${curAgeFields.stepId}/${step.id}`)} className="btn btn-dark align-self-end">למידע נוסף</div>
             </div>
           )
         })}
@@ -138,7 +139,7 @@ export default function ChildPage() {
                           >
                             <Button variant="light"><BsInfoCircle /></Button>
                           </OverlayTrigger>
-                          <a href={vac.ref} className="col-4 col-lg-6 text-start color-dark" target="_blank" rel="noopener noreferrer"><FiExternalLink /></a>
+                          <a href={vac.ref} className="col-3 col-lg-6 text-start color-dark" target="_blank" rel="noopener noreferrer"><FiExternalLink /></a>
                         </div>
                       </ListGroup.Item>)
                     })}
