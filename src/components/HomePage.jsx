@@ -131,7 +131,7 @@ export default function HomePage() {
           </div>
         </div>
         <div className="mt-4 p-3">
-          <h1 className="text center">מידע להורים</h1>
+          <h1 className="text-center">מידע להורים</h1>
           <div className="d-flex flex-column flex-xl-row gap-5 align-items-center justify-content-center ">
             <Link className="text-decoration-none" to={"/article1"}>
               <Card style={{ width: "20rem", height: "18rem" }}>

@@ -147,7 +147,7 @@ export default function ChildPage() {
               )
             })}
           </Tabs>
-          <p className="text-center fs-4 border-top m-2 ">מידע נוסף</p>
+          <p className="text-center fs-4 border-top m-2 ">מידע נוסף בנוגע לחיסונים</p>
           <div className="d-flex justify-content-center align-items-center">
             <div className="d-flex justify-content-evenly align-items-center p-2 col-6">
               <a className="col-2 col-md-1" href="https://vaccines.sanofi.co.il/" target="_blank" rel="noopener noreferrer">
