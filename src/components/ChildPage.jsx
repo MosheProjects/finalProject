@@ -87,10 +87,10 @@ export default function ChildPage() {
               <div  className="form-check form-check-reverse">
                 {(curChildInfo?.name !== name) ? <ThreeDots />
                   : curChildInfo?.milestones[curAgeFields.stepId][step.id] === "success" ?
-                    <input className="form-check-input " type="checkbox" value="" id={`question${i}`} checked onChange={(e) => { HandleCheckInput(e, step.id) }} /> :
-                    <input className="form-check-input " type="checkbox" value="" id={`question${i}`} onChange={(e) => { HandleCheckInput(e, step.id) }} />
+                    <input className="form-check-input pointer " type="checkbox" value="" id={`question${i}`} checked onChange={(e) => { HandleCheckInput(e, step.id) }} /> :
+                    <input className="form-check-input pointer" type="checkbox" value="" id={`question${i}`} onChange={(e) => { HandleCheckInput(e, step.id) }} />
                 }
-                <label onClick={()=>navigate(`../../check/${curAgeFields.stepId}/${step.id}`)} className="form-check-label pointer fs-4" htmlFor={`question${i}`}>
+                <label  className="form-check-label fs-4" htmlFor={`question${i}`}>
                   {step.name}
                 </label>
               </div>
