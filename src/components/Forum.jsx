@@ -1,4 +1,5 @@
 import FloatingLabel from "react-bootstrap/FloatingLabel";
+import { Link } from "react-router-dom";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { useEffect, useRef, useState } from "react";
@@ -33,7 +34,7 @@ export default function Forum() {
         getDataFsForum("forumMessages").then((data) => {
           setForumData(data);
         });
-        const colors = ["red", "blue", "green", "yellow", "brown", "orange", "pink"];
+        const colors = ["red", "blue", "green", "brown", "orange", "pink", "purple", "black"];
 
         const names = forumdata.forum.map((message) => message.name);
         const uniqeNames = [...new Set(names)];
@@ -42,23 +43,25 @@ export default function Forum() {
   }, [forumdata]);
 
   function handleSubmit(e) {
-    setMessage("");
-    getDataFsForum("forumMessages").then((data) => {
-      setForumData(data);
-    });
-    console.log("ref:", messageRef.current.value);
-    const uniqId = uuid4();
-    e.preventDefault();
-    const newObj = {
-      name: currenUserInfoState.pName + " " + currenUserInfoState.sName,
-      message: messageRef.current.value,
-      likes: 0,
-      dLikes: 0,
-      id: uniqId
-    };
-    const newArray = [...forumdata.forum, newObj];
-    console.log("newArr:", newArray);
-    setForumData({ forum: newArray });
+    if(currentUser){
+      setMessage("");
+      getDataFsForum("forumMessages").then((data) => {
+        setForumData(data);
+      });
+      console.log("ref:", messageRef.current.value);
+      const uniqId = uuid4();
+      e.preventDefault();
+      const newObj = {
+        name: currenUserInfoState.pName + " " + currenUserInfoState.sName,
+        message: messageRef.current.value,
+        likes: 0,
+        dLikes: 0,
+        id: uniqId
+      };
+      const newArray = [...forumdata.forum, newObj];
+      console.log("newArr:", newArray);
+      setForumData({ forum: newArray });
+    }
   }
 
   function handleLikes(id) {
@@ -87,7 +90,8 @@ export default function Forum() {
       className="d-flex flex-column justify-content-center align-items-center"
     >
       <h1>פורום ייעוץ להורים</h1>
-      <Form onSubmit={handleSubmit}>
+      {(currentUser)?
+      (<Form onSubmit={handleSubmit}>
         <FloatingLabel controlId="floatingTextarea2" label="כתוב משהו...">
           <Form.Control
             as="textarea"
@@ -106,7 +110,11 @@ export default function Forum() {
           />
         </FloatingLabel>
         <Button className="mb-3" type="submit">הוסף תגובה</Button>
-      </Form>
+      </Form>):
+      (<>
+        <h3>כדי לכתוב עליך להרשם</h3>
+        <Link to={'../../signup'} className="text-decoration-none p-1 fs-4  ">להרשמה</Link>
+      </>)}
 
       {forumdata?.forum ? (
         <div className="d-flex flex-column-reverse w-50">

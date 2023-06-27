@@ -25,11 +25,10 @@ export default function Header() {
         <Navbar.Collapse id="responsive-navbar-nav ">
           <Nav className="col-12 col-lg-6 d-lg-flex justify-content-evenly align-items-start align-items-md-center ">
             <Link to={'../../'} className='link-light text-decoration-none fs-4'>דף הבית</Link>
-            <Link to={'../../about'} className='link-light text-decoration-none fs-4'>עלינו</Link>
+            <Link to={'../../user/forum'} className='link-light text-decoration-none fs-4'>פורום הורים</Link>
             {(currenUserInfoState) ?
               (<>
                 <Link to={'../../user/main'} className='link-light text-decoration-none fs-4'>מידע אישי</Link>
-                <Link to={'../../user/forum'} className='link-light text-decoration-none fs-4'>פורום הורים</Link>
                 {(currenUserInfoState?.childrensInfo?.length > 0) ? (
                   <NavDropdown title="ילדים" className="text-nothing text-decoration-none fs-4 " id="navbarScrollingDropdown">
                     <div className="d-flex flex-column text-center  justify-content-between">

@@ -7,7 +7,6 @@ import Login from './components/Login'
 import ForgotPassword from "./components/ForgotPassword";
 import './style/style.css'
 import AddDetailes from "./components/AddDetailes";
-import AboutUs from "./components/AboutUs";
 import PersonalMainPage from "./components/PersonalMainPage";
 import Footer from "./components/Footer";
 import { useCurrenUserInfo } from "./Context/CurrenUserInfoContext";
@@ -15,7 +14,6 @@ import ErrNotLoggedIn from "./components/ErrNotLoggedIn";
 import ChildPage from "./components/ChildPage";
 import { useAuth } from "./Context/AuthContext";
 import ThreeDots from "./components/ThreeDots";
-import DevelopmentStep from "./components/DevelopmentStep";
 import Forum from "./components/Forum";
 
 
@@ -28,15 +26,13 @@ export default function App() {
     <Header/>
     <Routes>
       <Route path='/' element={<HomePage/>}/>
-      <Route path='/about' element={<AboutUs/>}/>
       <Route path="/signup" element={<SignUp/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/forgotPassword" element={<ForgotPassword/>}/>
+      <Route path="/user/forum" element={<Forum/>}/>
       <Route path="/addDetailes" element={(currentUser)?<AddDetailes/>:<ErrNotLoggedIn/>}/>
       <Route path="/user/main" element={(currenUserInfoState)?(<PersonalMainPage/>):((currentUser)?<ThreeDots/>:<ErrNotLoggedIn/>)}/>
       <Route path="/child/:name" element={(currenUserInfoState)?(<ChildPage/>):((currentUser)?<ThreeDots/>:<ErrNotLoggedIn/>)}/>
-      <Route path="/user/forum" element={(currenUserInfoState)?(<Forum/>):((currentUser)?<ThreeDots/>:<ErrNotLoggedIn/>)}/>
-      <Route path="/check/:age/:test" element={(currenUserInfoState)?(<DevelopmentStep/>):((currentUser)?<ThreeDots/>:<ErrNotLoggedIn/>)}/>
     </Routes>
     <Footer/>
     </div>

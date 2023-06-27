@@ -94,7 +94,6 @@ export default function ChildPage() {
                   {step.name}
                 </label>
               </div>
-              <div  onClick={()=>navigate(`../../check/${curAgeFields.stepId}/${step.id}`)} className="btn btn-dark align-self-end">למידע נוסף</div>
             </div>
           )
         })}
