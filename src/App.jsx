@@ -15,7 +15,10 @@ import ChildPage from "./components/ChildPage";
 import { useAuth } from "./Context/AuthContext";
 import ThreeDots from "./components/ThreeDots";
 import Forum from "./components/Forum";
-
+import Article1 from "./articles/Article1"
+import Article2 from "./articles/Article2"
+import Article3 from "./articles/Article3"
+import Article4 from "./articles/Article4"
 
 export default function App() {
   const{currenUserInfoState} = useCurrenUserInfo();
@@ -30,6 +33,12 @@ export default function App() {
       <Route path="/login" element={<Login/>}/>
       <Route path="/forgotPassword" element={<ForgotPassword/>}/>
       <Route path="/user/forum" element={<Forum/>}/>
+
+      <Route path="/article1" element={<Article1/>}/>
+      <Route path="/article2" element={<Article2/>}/>
+      <Route path="/article3" element={<Article3/>}/>
+      <Route path="/article4" element={<Article4/>}/>
+
       <Route path="/addDetailes" element={(currentUser)?<AddDetailes/>:<ErrNotLoggedIn/>}/>
       <Route path="/user/main" element={(currenUserInfoState)?(<PersonalMainPage/>):((currentUser)?<ThreeDots/>:<ErrNotLoggedIn/>)}/>
       <Route path="/child/:name" element={(currenUserInfoState)?(<ChildPage/>):((currentUser)?<ThreeDots/>:<ErrNotLoggedIn/>)}/>
