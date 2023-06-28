@@ -112,8 +112,11 @@ export default function Forum() {
         <Button className="mb-3" type="submit">הוסף תגובה</Button>
       </Form>):
       (<>
-        <h3>כדי לכתוב עליך להרשם</h3>
-        <Link to={'../../signup'} className="text-decoration-none p-1 fs-4  ">להרשמה</Link>
+        <h3>כדי לכתוב עליך להרשם או להכנס</h3>
+        <div className="d-flex justify-content-evenly">
+          <Link to={'../../signup'} className="text-decoration-none p-1 fs-4  ">להרשמה</Link>
+          <Link to={'../../login'} className="text-decoration-none p-1 fs-4  ">לכניסה</Link>
+        </div>
       </>)}
 
       {forumdata?.forum ? (
