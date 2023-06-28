@@ -91,12 +91,11 @@ export default function Forum() {
     >
       <h1>פורום ייעוץ להורים</h1>
       {(currentUser)?
-      (<Form onSubmit={handleSubmit}>
-        <FloatingLabel controlId="floatingTextarea2" label="כתוב משהו...">
+      (<Form className="col-5" onSubmit={handleSubmit}>
+        <FloatingLabel controlId="floatingTextarea" label="כתוב משהו...">
           <Form.Control
             as="textarea"
-        
-            className="p-2 m-2"
+            placeholder="כתוב משהו..."
             ref={messageRef}
             required
             value={message}
@@ -109,7 +108,7 @@ export default function Forum() {
             }}
           />
         </FloatingLabel>
-        <Button className="mb-3" type="submit">הוסף תגובה</Button>
+        <Button className="m-3" type="submit">הוסף תגובה</Button>
       </Form>):
       (<>
         <h3>כדי לכתוב עליך להרשם או להכנס</h3>
@@ -123,7 +122,7 @@ export default function Forum() {
         <div className="d-flex flex-column-reverse w-50">
           {forumdata?.forum.map((item) => {
             return (
-              <div key={item.id} className="border rounded mb-2 p-1" style={{ height: "100px" }}>
+              <div key={item.id} className="border rounded mb-2 p-1" style={{ minHeight: "100px" }}>
                 <p style={{ fontWeight: "bold", color: `${colorByName?.find((message) => item.name === message.name)?.color}` }}>
                   {item.name}
                 </p>
