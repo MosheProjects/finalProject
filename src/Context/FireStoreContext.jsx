@@ -44,14 +44,29 @@ export function FirestoreProvider({ children }) {
         }
     }
 
+    async function addFsForum(uid, data) {
+        await setDoc(doc(db, "Forum", uid), data);
+    }
 
+    async function getDataFsForum(uid) {
+        const docRef = doc(db, "Forum", uid);
+        const docSnap = await getDoc(docRef);
+        if (docSnap.exists()) {
+            return docSnap.data();
+        } else {
+            // doc.data() will be undefined in this case
+            console.log("No such document!");
+        }
+    }
 
     const value = {
 
         addFS,
         updateFS,
         deleteFS,
-        getDataFS
+        getDataFS,
+        addFsForum,
+        getDataFsForum
 
     }
     return (
