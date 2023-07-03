@@ -39,11 +39,11 @@ export default function ChildPage() {
     let years = moment().year() - childDateOfBirth.year();
     let months = moment().month() - childDateOfBirth.month() + (years * 12);
     setCurAgeFields(dataState?.development.find((step) => step.months.includes(months)))
-    
-    if(months > 72){
+
+    if (months > 72) {
       setGrownUp(true);
     }
-    
+
 
 
     let curVacc = dataState?.vaccines.find((vacc) => vacc.months.includes(months));
@@ -58,7 +58,7 @@ export default function ChildPage() {
   }, [curChildInfo])
 
   useEffect(() => {
-    if(curAgeFields && curChildInfo.name === name){
+    if (curAgeFields && curChildInfo.name === name) {
       setGrownUp(false)
     }
   }, [curAgeFields])
@@ -84,13 +84,13 @@ export default function ChildPage() {
         {curAgeFields?.milestones.map((step, i) => {
           return (
             <div key={i} className=" mb-2 p-1 border border-1 rounded d-flex flex-column flex-md-row justify-content-between">
-              <div  className="form-check form-check-reverse">
+              <div className="form-check form-check-reverse">
                 {(curChildInfo?.name !== name) ? <ThreeDots />
                   : curChildInfo?.milestones[curAgeFields.stepId][step.id] === "success" ?
                     <input className="form-check-input pointer " type="checkbox" value="" id={`question${i}`} checked onChange={(e) => { HandleCheckInput(e, step.id) }} /> :
                     <input className="form-check-input pointer" type="checkbox" value="" id={`question${i}`} onChange={(e) => { HandleCheckInput(e, step.id) }} />
                 }
-                <label  className="form-check-label fs-4" htmlFor={`question${i}`}>
+                <label className="form-check-label fs-4" htmlFor={`question${i}`}>
                   {step.name}
                 </label>
               </div>
