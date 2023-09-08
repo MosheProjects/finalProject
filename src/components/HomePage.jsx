@@ -178,7 +178,7 @@ export default function HomePage() {
                   src="https://studiotzeadim.com/wp-content/uploads/2018/07/1-5.jpg"
                 />
                 <Card.Body>
-                  <Card.Text>הילד חווה הפרעה באכילה </Card.Text>
+                  <Card.Text>ילדים, סיבה לזהירות</Card.Text>
                 </Card.Body>
               </Card>
             </Link>
